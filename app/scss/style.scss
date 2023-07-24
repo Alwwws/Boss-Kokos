@@ -698,7 +698,8 @@
     font-weight: 900;
     line-height: 22px;
     letter-spacing: 0em;
-    padding: 46px 0 26px 0px;
+    padding: 46px 0 16px 0px;
+    margin-bottom: 16px;
     color: #111111;
   }
 
@@ -738,19 +739,22 @@
     font-family: Nunito Sans;
     font-size: 16px;
     font-weight: 700;
+    max-width: 349px;
     line-height: 22px;
     letter-spacing: 0em;
-    padding: 16px 0 5px 20px;
+    padding: 5px 0 0px 20px;
     color: #111111;
   }
 
   &-state-text-text {
+    color: #111;
     font-family: Nunito Sans;
     font-size: 14px;
+    font-style: normal;
     font-weight: 400;
     line-height: 20px;
-    letter-spacing: 0em;
-    padding: 16px 0 85px 20px;
+    max-width: 350px;
+    padding: 7px 0 2px 20px;
     color: #111111;
   }
 
@@ -764,6 +768,38 @@
 
   &-history-link {
     color: #111111
+  }
+
+  &-state-continue {
+    color: #F58DA1;
+    font-family: Nunito Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 22px;
+    padding: 16px 0 5px 20px;
+    text-decoration-line: underline;
+  }
+}
+
+.button-articles-state {
+  background: #F3F3F3;
+  color: #111;
+  text-align: center;
+  font-family: Nunito Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  padding: 5px 28px;
+  margin: 34px 0 44px 0px;
+  line-height: normal;
+  border-radius: 5px;
+  border: 2px solid #F58DA1;
+  &:hover{
+    background: #F58DA1;
+  }
+  &-text{
+    color: #111111;
   }
 }
 
