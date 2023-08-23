@@ -1,8 +1,9 @@
-var mixer = mixitup('.footer__bank-all', {
+ var mixer = mixitup('.footer__bank-all', {
   load: {
     filter: '.category-title'
   }
 });
+
 
 emailInput.onclick = () => {
   navigator.clipboard.writeText('olga.fortuna210@gmail.com')

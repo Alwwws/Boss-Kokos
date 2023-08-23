@@ -795,10 +795,12 @@
   line-height: normal;
   border-radius: 5px;
   border: 2px solid #F58DA1;
-  &:hover{
+
+  &:hover {
     background: #F58DA1;
   }
-  &-text{
+
+  &-text {
     color: #111111;
   }
 }
@@ -806,26 +808,37 @@
 .hospis-about {
   background-color: #020102;
 
+
   &__inner {
     display: flex;
-    position: relative;
+    justify-content: space-between;
+
   }
 
   &__title {
     font-family: Nunito Sans;
-    font-size: 28px;
+    font-size: 48px;
     font-weight: 900;
     line-height: 65px;
     margin-top: 132px;
     color: #F58DA1;
   }
 
-  &__about-text {
+  &-text {
     font-family: Nunito Sans;
     font-size: 16px;
     font-weight: 700;
     line-height: 26px;
+    max-width: 490px;
     color: #F3F3F3;
+  }
+
+  &_image {
+    margin: 15px 0 0 0;
+  }
+
+  &-text-image {
+    background: url(images/index/mops-box.png);
   }
 
   &-btn {
@@ -836,6 +849,7 @@
     position: absolute;
     top: 100px;
     right: -130px;
+    z-index: 450;
 
     &::after {
       content: "";
@@ -849,175 +863,126 @@
   }
 }
 
-.rescue-protocol {
-  padding-bottom: 20px;
-  background: linear-gradient(#F58DA1, #F7AFBD);
-
-  &__btn {
-    margin: 34px 0 50px 0;
-    background: #ffff;
-
-    &:hover {
-      background: #eb0c4b;
-    }
-  }
-
-  &-card {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-
-  &-text {
-    position: relative;
-    font-family: Nunito Sans;
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 22px;
-    max-width: 250px;
-  }
-
-  &-number {
-    display: flex;
-    font-family: Nunito Sans;
-    font-size: 100px;
-    font-weight: 900;
-    line-height: 100px;
-    color: #FFFFFF;
-    opacity: 0.15;
-  }
-
-  &-lags {
-    position: absolute;
-    content: "";
-    top: 50px;
-    right: 200px;
-    background: url(../images/index/lags.svg) no-repeat;
-    width: 50px;
-    height: 50px;
-  }
-
-  &-line {
-    position: absolute;
-    top: 80px;
-    right: -85px;
-    width: 315px;
-    border-bottom: 1px solid #ffff;
-  }
-
-  &-title {
-    font-family: Nunito Sans;
-    font-size: 48px;
-    font-weight: 900;
-    line-height: 22px;
-    letter-spacing: 0em;
-    padding: 47px 0 20px;
-    color: #111111;
-  }
-
-  &-line-dotted {
-    position: absolute;
-    top: 80px;
-    right: -130px;
-    width: 1000%;
-    left: -100%;
-    border-bottom: 1px dashed #ffff;
-  }
-
-  &-paragraph {
-    margin-top: 30px;
-  }
-
-  &-form-inner {
-    display: flex;
-    justify-content: space-around;
-  }
-
-  &-input {
-    width: 285px;
-    height: 50px;
-    margin: 35px -80px 24px -20px;
-    border-radius: 5px;
-    border: 1px solid #F58DA1;
-    padding-left: 25px;
-  }
-
-  &-answers {
-    font-family: Nunito Sans;
-    font-size: 48px;
-    font-weight: 900;
-    line-height: 48px;
-    color: #111111;
-    padding: 90px 0px 0 40px;
-  }
-
-  &-image {
-    margin-top: -120px;
-  }
-
-  &-form {
-    background: #ffff;
-  }
-
-  &-agreement {
-    margin: -190px 0 80px 0;
-    padding-left: 40px;
-    font-family: Nunito Sans;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 48px;
-    color: #B7B7B7;
-    padding: 90px 0px 0 40px;
-  }
-
-  &-img {
-    margin-bottom: 50px;
-  }
+ .rescue_protocol {
+  background: linear-gradient(90.02deg, #F58DA1 0.02%, #F7AFBD 99.98%);
+  counter-reset: section;
+}
+.wrapp-cards{
+  display: flex;
+  flex-wrap: wrap;
+}
+.title_section{
+  font-size: #111111;
+  
+}
+.rescue_protocol .card {
+  position: relative;
 }
 
-.rescue-form {
-  background: linear-gradient(#F58DA1, #F7AFBD);
+.rescue_protocol .card::before {
+  counter-increment: section;
+  content: counter(section, decimal-leading-zero);
+  font-weight: 900;
+  font-size: 100px;
+  color: rgba(255, 255, 255, 0.15);
 }
 
-.form-btn {
-  margin-top: 35px;
-  background-color: #F58DA1;
+.rescue_protocol .title_card {
+  margin-top: -35px;
+  position: relative;
 }
 
-.deg-30 {
-  transform: rotate(-30deg);
+.rescue_protocol .title_card::before {
+  content: "";
+  background: url(../images/index/lags.svg) no-repeat;
+  width: 50px;
+  height: 50px;
+  color: #fff;
+  font-family: "icomoon" !important;
+  font-size: 40px;
+  position: absolute;
+  top: 50%;
+  left: -5px;
+  transform: translateY(-50%);
+  display: block;
 }
 
-.deg-180 {
-  transform: rotate(180deg);
+.rescue_protocol .card.card:nth-of-type(3n) .title_card::before {
+  transform: rotate(27deg) translate(-10px, -20px);
 }
 
-.deg_30 {
-  transform: rotate(30deg);
+.rescue_protocol .card.card:nth-of-type(3n+2) .title_card::before {
+  transform: rotate(-45deg) translate(20px, -20px);
 }
 
-.deg-130 {
-  transform: rotate(-130deg);
+.rescue_protocol .card.card:nth-of-type(5n+2) .title_card::before {
+  transform: rotate(227deg) translate(15px, 15px);
 }
 
-.deg_130 {
-  transform: rotate(110deg);
+.rescue_protocol .card.card:nth-of-type(5n+4) .title_card::before {
+  transform: rotate(126deg) translate(-10px, 10px);
 }
 
-.deg-90 {
-  transform: rotate(-90deg);
+.rescue_protocol .text_card {
+  padding-top: 30px;
+  max-width: 290px;
 }
 
-.deg_10 {
-  transform: rotate(10deg);
+.rescue_protocol .wrapp_btn_support {
+  padding-top: 20px;
 }
 
-.deg_100 {
-  transform: rotate(100deg);
+.rescue_protocol .wrapp_btn_support a {
+  background: #fff;
+}
+
+.rescue_protocol .question {
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.rescue_protocol input {
+  background: #FFFFFF;
+  border: 1px solid #F58DA1;
+  border-radius: 5px;
+  height: 50px;
+  padding: 20px;
+  width: 100%;
+}
+
+.rescue_protocol input:last-of-type {
+  margin-top: 20px;
+}
+
+.rescue_protocol .wrapp_img {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.rescue_protocol input::-moz-placeholder {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #B7B7B7;
+}
+
+.rescue_protocol input::placeholder {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #B7B7B7;
+}
+
+.rescue_protocol span {
+  display: none;
 }
 
 .footer {
   &__content {
+    margin-top: 60px;
     background-color: #020102;
   }
 
