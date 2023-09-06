@@ -674,9 +674,6 @@
   margin: 40px 0px 50px 0px;
 }
 
-.header-btn a {
-  color: #ffff;
-}
 
 .container-state {
   max-width: 1310px;
@@ -863,20 +860,24 @@
   }
 }
 
- .rescue_protocol {
+.rescue_protocol {
   background: linear-gradient(90.02deg, #F58DA1 0.02%, #F7AFBD 99.98%);
   counter-reset: section;
 }
-.wrapp-cards{
+
+.wrapp-cards {
   display: flex;
   flex-wrap: wrap;
 }
-.title_section{
+
+.title_section {
   font-size: #111111;
-  
+
 }
+
 .rescue_protocol .card {
   position: relative;
+  margin-right: 20px;
 }
 
 .rescue_protocol .card::before {
@@ -890,6 +891,13 @@
 .rescue_protocol .title_card {
   margin-top: -35px;
   position: relative;
+
+}
+
+.rescue_protocol-title {
+  font-family: Nunito Sans;
+  font-weight: 900;
+  font-size: 48px;
 }
 
 .rescue_protocol .title_card::before {
@@ -906,6 +914,16 @@
   transform: translateY(-50%);
   display: block;
 }
+
+.rescue_protocol .title_card::after {
+  content: "";
+  position: absolute;
+  border-top: 1px dashed #FFFFFF;
+  height: 1px;
+  display: block;
+  width: 500px;
+}
+
 
 .rescue_protocol .card.card:nth-of-type(3n) .title_card::before {
   transform: rotate(27deg) translate(-10px, -20px);
@@ -951,14 +969,11 @@
   height: 50px;
   padding: 20px;
   width: 100%;
+  margin-right: 20px;
 }
 
-.rescue_protocol input:last-of-type {
-  margin-top: 20px;
-}
 
 .rescue_protocol .wrapp_img {
-  width: 100%;
   margin-top: 20px;
 }
 
@@ -974,12 +989,22 @@
   font-size: 16px;
   line-height: 22px;
   color: #B7B7B7;
+  
 }
 
 .rescue_protocol span {
   display: none;
 }
-
+.white__btn{
+  background: #FFFFFF;
+  margin: 20px 0 0 0 ;
+}
+.question{
+  display: flex;
+}
+.wrapp_input-question{
+  display: flex;
+}
 .footer {
   &__content {
     margin-top: 60px;
