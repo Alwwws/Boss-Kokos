@@ -1004,7 +1004,27 @@
 }
 .wrapp_input-question{
   display: flex;
+  background: #FFFFFF;
 }
+.input-question{
+  display: flex;
+  &-animation{
+    display: flex;
+    justify-content: flex-end;
+  }
+  &-btn{
+  padding: 14px 8px;
+    background: linear-gradient(90deg, #F58DA1 0%, #F7AFBD 100%);
+    border-radius: 5px;
+    border: none;
+    margin: 0px 0 0 10px;
+    height: 50px;
+    font-weight: 700;
+    font-family: 'Nunito Sans';
+    color:#111111;
+  }
+}
+ 
 .footer {
   &__content {
     margin-top: 60px;
