@@ -37,6 +37,7 @@
       font-weight: 700;
       font-size: 16px;
       line-height: 22px;
+      color: #FFFFFF;
     }
   }
 
@@ -672,6 +673,7 @@
   border: 1px solid #F7AFBD;
   padding: 14px 54px;
   margin: 40px 0px 50px 0px;
+
 }
 
 
@@ -989,31 +991,53 @@
   font-size: 16px;
   line-height: 22px;
   color: #B7B7B7;
-  
+
 }
 
 .rescue_protocol span {
   display: none;
 }
-.white__btn{
+
+.white__btn {
+  background-color: #FFFFFF;
+  margin: 20px 0 0 0;
+}
+
+.question {
+  display: flex;
+}
+
+.input-question {
+  display: flex;
+  justify-content: space-around;
   background: #FFFFFF;
-  margin: 20px 0 0 0 ;
 }
-.question{
-  display: flex;
+
+.image-input-dog {
+  
+  margin-left: 70px;
 }
-.wrapp_input-question{
-  display: flex;
-  background: #FFFFFF;
+
+.form__inner-title {
+  font-family: Nunito Sans;
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 65px;
+  letter-spacing: 0em;
+  padding: 59px 0 25px 0;
 }
-.input-question{
+
+.input-question {
   display: flex;
-  &-animation{
-    display: flex;
-    justify-content: flex-end;
-  }
-  &-btn{
-  padding: 14px 8px;
+  flex-grow: 1;
+  position: relative;  
+
+  //   &-animation{
+  //     display: flex;
+  //     justify-content: flex-end;
+  //   }
+  &-btn {
+    padding: 4px 8px;
     background: linear-gradient(90deg, #F58DA1 0%, #F7AFBD 100%);
     border-radius: 5px;
     border: none;
@@ -1021,10 +1045,18 @@
     height: 50px;
     font-weight: 700;
     font-family: 'Nunito Sans';
-    color:#111111;
+    color: #111111;
   }
 }
- 
+
+.form-bottom-input {
+  font-family: Nunito Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+  color: #B7B7B7;
+}
+
 .footer {
   &__content {
     margin-top: 60px;
