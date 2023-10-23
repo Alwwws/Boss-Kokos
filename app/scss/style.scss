@@ -865,6 +865,7 @@
 .rescue_protocol {
   background: linear-gradient(90.02deg, #F58DA1 0.02%, #F7AFBD 99.98%);
   counter-reset: section;
+  padding-bottom: 58px;
 }
 
 .wrapp-cards {
@@ -999,7 +1000,7 @@
 }
 
 .white__btn {
-  background-color: #FFFFFF;
+
   margin: 20px 0 0 0;
 }
 
@@ -1010,11 +1011,10 @@
 .input-question {
   display: flex;
   justify-content: space-around;
-  background: #FFFFFF;
+
 }
 
 .image-input-dog {
-  
   margin-left: 70px;
 }
 
@@ -1027,15 +1027,24 @@
   padding: 59px 0 25px 0;
 }
 
+.container_form {
+  max-width: 1320px;
+  margin: 20px auto;
+  padding: 0 35px;
+  background-color: #FFFFFF;
+}
+
 .input-question {
   display: flex;
   flex-grow: 1;
-  position: relative;  
+  position: relative;
 
-  //   &-animation{
-  //     display: flex;
-  //     justify-content: flex-end;
-  //   }
+  .input-question-flex {
+    display: flex;
+    flex-grow: 1;
+    position: relative;
+  }
+
   &-btn {
     padding: 4px 8px;
     background: linear-gradient(90deg, #F58DA1 0%, #F7AFBD 100%);
@@ -1059,7 +1068,6 @@
 
 .footer {
   &__content {
-    margin-top: 60px;
     background-color: #020102;
   }
 
