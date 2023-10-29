@@ -30,3 +30,17 @@ $(function () {
     arrows: true,
   });
 })
+$((function () {
+  $(".rightside-menu__close").on("click", (function () {
+    $(".rightside-menu").addClass("rightside-menu__close")
+  }
+  )),
+    $(".header__btn").on("click", (function () {
+      $(".rightside-menu").removeClass("rightside-menu__close")
+    }
+    )),
+    $(".header__btn-menu").on("click", (function () {
+      $(".menu").toggleClass("menu--open")
+    }
+    ))
+  }));
