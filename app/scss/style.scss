@@ -31,13 +31,12 @@
 
     a {
       padding: 0px 16px;
-      color: #111111;
       font-family: 'Nunito Sans';
       font-style: normal;
       font-weight: 700;
       font-size: 16px;
       line-height: 22px;
-      color: #FFFFFF;
+      color: #111111;
     }
   }
 
@@ -224,7 +223,13 @@
   }
 
   &__btn {
-    margin: 45px 0 50px 0
+    margin: 45px 0 50px 0;
+    color: #020102;
+
+  }
+
+  &__button {
+    color: #020102;
   }
 
   &__video {
@@ -673,9 +678,11 @@
   border: 1px solid #F7AFBD;
   padding: 14px 54px;
   margin: 40px 0px 50px 0px;
-
+ 
 }
-
+.button-stories-white{
+  color: #ffff !important;
+}
 
 .container-state {
   max-width: 1310px;
@@ -892,7 +899,7 @@
 }
 
 .rescue_protocol .title_card {
-  margin-top: -35px;
+  margin-top: -25px;
   position: relative;
 
 }
@@ -921,10 +928,10 @@
 .rescue_protocol .title_card::after {
   content: "";
   position: absolute;
-  border-top: 1px dashed #FFFFFF;
+  border-top: 1px solid #FFFFFF;
   height: 1px;
   display: block;
-  width: 500px;
+  width: 150%;
 }
 
 
@@ -1000,8 +1007,8 @@
 }
 
 .white__btn {
-
-  margin: 20px 0 0 0;
+  background: #ffff;
+  margin: 34px 0 0 0;
 }
 
 .question {
@@ -1035,9 +1042,11 @@
   padding: 0 35px;
   background-color: #FFFFFF;
 }
-.container_text{
+
+.container_text {
   max-width: 100%;
 }
+
 .input-question {
   display: flex;
   flex-grow: 1;
@@ -1058,16 +1067,19 @@
     height: 50px;
     font-weight: 700;
     font-family: 'Nunito Sans';
-   
+
   }
- a{
-  color: #111111;
- }
+
+  a {
+    color: #111111;
+  }
 }
+
 .input-question-btn:hover {
-   background: #e64162;
-   cursor: pointer;
- }
+  background: #e64162;
+  cursor: pointer;
+}
+
 .form-bottom-input {
   font-family: Nunito Sans;
   font-size: 14px;
@@ -1075,7 +1087,8 @@
   line-height: 19px;
   color: #B7B7B7;
 }
-.input-question-footer{
+
+.input-question-footer {
   font-family: 'Nunito Sans';
   font-weight: 400;
   font-size: 14px;
@@ -1083,6 +1096,7 @@
   color: #B7B7B7;
 
 }
+
 .footer {
   &__content {
     background-color: #020102;
