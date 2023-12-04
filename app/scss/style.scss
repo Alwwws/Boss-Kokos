@@ -39,7 +39,7 @@
       color: #111111;
     }
   }
-
+  
   &__button {
     color: $black;
     font-family: "Nunito Sans" !important;
@@ -50,6 +50,7 @@
     line-height: 22px;
   }
 }
+
 
 .menu {
   &__logo {
@@ -186,7 +187,9 @@
     height: 90px;
   }
 }
-
+.header-burger {
+  display: none;
+}
 .black-mops {
   background-color: #020102;
   color: #F3F3F3;
@@ -678,9 +681,10 @@
   border: 1px solid #F7AFBD;
   padding: 14px 54px;
   margin: 40px 0px 50px 0px;
- 
+
 }
-.button-stories-white{
+
+.button-stories-white {
   color: #ffff !important;
 }
 
@@ -1574,11 +1578,38 @@
   height: 20px;
 }
 
-@media (max-width: 1257px){
-  .header-btn{
+@media (max-width: 1257px) {
+  .header-btn {
     padding: 7px;
   }
-  .header-btn a{
-    padding: 5px 0 15px 10px !important;
+}
+
+@media (max-width: 1250px) {
+  .menu__list-item {
+    display: none;
+  }
+
+  .header-btn,
+  .menu__logo {
+    transform: scale(0.6);
+  }
+
+  .header-burger {
+    margin-top: 12px;
+    display: block;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    span {
+      background: #000;
+      width: 21px;
+      height: 3px;
+      border-radius: 2px;
+      display: block;
+      margin: 6px 0px;
+    }
+  }
+  .support_fond {
+    display: none;
   }
 }

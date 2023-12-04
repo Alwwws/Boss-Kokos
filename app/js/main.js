@@ -30,6 +30,7 @@ $(function () {
     arrows: true,
   });
 })
+
 $((function () {
   $(".rightside-menu__close").on("click", (function () {
     $(".rightside-menu").addClass("rightside-menu__close")
