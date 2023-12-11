@@ -20,6 +20,7 @@
             <img class="menu__logo-img" src="images/logo.svg" alt="images">
           </a>
           <nav class="menu">
+
             <ul class="menu__list">
               <li class="menu__list-item menu__checked">
                 <a class="menu__header-title" href="#">Про нас</a>
@@ -96,18 +97,31 @@
                   </li>
                 </ul>
               </li>
-              <button class="header-btn">
+              <button class="header-btn burger-button">
                 <a class="header-btn__button" href="https://www.youtube.com/">
                   Підтримати <span class="support_fond">фонд</span>
                 </a>
               </button>
-              <button class="header-burger">
-                <span></span>
-                <span></span>
-                <span></span>
-              </button>
+              <div class="drop-down">
+                <button class="dropdown-tooggle" easy-toggle="#dropdown" easy-class="show" easy-rcoe>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <div class="menu-button">
+                  </div>
+                </button>
+                <div id="dropdown" class="dropdown-menu">
+                  <a href="#" class="dropdown-link">
+                    <button class="header-btn burger-menu">
+                      <a class="header-btn__button" href="https://www.youtube.com/">
+                        Підтримати <span class="support_fond">фонд</span>
+                      </a>
+                    </button>
+                  </a>
+                </div>
+              </div>
+
           </nav>
-          </ul>
           </ul>
         </div>
       </div>
@@ -295,7 +309,7 @@
         </div>
       </div>
     </div>
-  </div>
+</div>
   <section class="happy__stories">
     <div class="container">
       <h1 class="happy__stories-title">

@@ -39,7 +39,7 @@
       color: #111111;
     }
   }
-  
+
   &__button {
     color: $black;
     font-family: "Nunito Sans" !important;
@@ -187,9 +187,13 @@
     height: 90px;
   }
 }
-.header-burger {
+.burger-menu{
   display: none;
 }
+.dropdown-tooggle {
+  display: none;
+}
+
 .black-mops {
   background-color: #020102;
   color: #F3F3F3;
@@ -1594,22 +1598,57 @@
     transform: scale(0.6);
   }
 
-  .header-burger {
-    margin-top: 12px;
+  .dropdown-tooggle {
+    margin-top: 23px;
     display: block;
     background-color: transparent;
     border: none;
     cursor: pointer;
+
     span {
-      background: #000;
-      width: 21px;
-      height: 3px;
+      background: #B7B7B7;
+      width: 24px;
+      height: 2px;
       border-radius: 2px;
       display: block;
+      border: none;
       margin: 6px 0px;
     }
+
+    span:nth-child(odd) {
+      display: block;
+      margin-left: 2px;
+      height: 2.5px;
+      width: 19px;
+    }
+    span:first-child {
+      transform: rotate(3deg);
+    }
+    span:nth-child(3) {
+      transform: rotate(-3deg);
+      height: 2.5px;
+    }
   }
+
   .support_fond {
     display: none;
+  }
+
+}
+
+@media (max-width: 440px) {
+  .menu__logo-img {
+    max-width: 170px;
+    margin-left: -70px;
+  }
+
+  .menu__list {
+    margin-right: -20px;
+  }
+}
+
+@media (max-width: 330px) {
+  .menu__list {
+    margin-left: -130px;
   }
 }
